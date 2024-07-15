@@ -1,0 +1,14 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 88px;
+
+  &__title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 130%;
+    max-width: 613px;
+  }
+}

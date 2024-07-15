@@ -1,0 +1,24 @@
+.mission {
+  position: relative;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 150%;
+  letter-spacing: 0.5em;
+  padding-left: 135px;
+
+  text-transform: uppercase;
+
+  span {
+    color: #8cdae5;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 98px;
+    height: 1px;
+    background-color: #3a3a3a;
+  }
+}

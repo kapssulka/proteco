@@ -1,0 +1,37 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+  &__textBlock {
+    padding-top: 56px;
+  }
+  &__decription {
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 844px;
+
+    margin-bottom: 68px;
+  }
+
+  &__nameBlock {
+    display: flex;
+    align-items: center;
+
+    font-size: 16px;
+    line-height: 130%;
+    color: #8cdae5;
+    div {
+      margin-right: 30px;
+    }
+
+    &_name {
+      font-weight: 700;
+    }
+  }
+
+  &__boss {
+    max-width: 257px;
+    padding-left: 30px;
+  }
+}

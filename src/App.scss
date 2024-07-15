@@ -4,6 +4,24 @@
   margin: 0 auto;
 }
 
-body {
-  background-color: black;
+#blue {
+  color: #8cdae5;
+}
+
+// body {
+//   background-color: black;
+// }
+
+.background-img {
+  position: absolute;
+  z-index: -100;
+  top: 0;
+  width: 100%; /* Полная ширина экрана */
+  height: 916px; /* Высота будет автоматически вычисляться */
+  overflow: hidden; /* Скрыть часть изображения, если оно выйдет за границы контейнера */
+  img {
+    width: 100%;
+    object-fit: cover; /* Сохраняет соотношение сторон и масштабирует изображение так, чтобы оно полностью заполнило контейнер */
+    display: block; /* Убирает нижний отступ изображения */
+  }
 }

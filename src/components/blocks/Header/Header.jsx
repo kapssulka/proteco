@@ -1,5 +1,5 @@
 import React from "react";
-import LogoIcon from "../icons/LogoIcon";
+import LogoIcon from "/src/components/icons/LogoIcon";
 import HeaderRight from "./elements/HeaderRight/HeaderRight";
 import classes from "./Header.module.scss";
 
