@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./HeadPurpose.module.scss";
-import TirleRight from "../../../../elements/TirleRight/TirleRight";
+import TitleRight from "../../../../elements/TitleRight/TitleRight";
 
 export default function HeadPurpose() {
   return (
@@ -9,9 +9,9 @@ export default function HeadPurpose() {
         Наша главная цель – <span id="blue">забота о клиентах</span> и повышение
         качества их жизни!
       </h2>
-      <TirleRight>
+      <TitleRight>
         Миссия <span id="blue">компании</span>
-      </TirleRight>
+      </TitleRight>
     </div>
   );
 }

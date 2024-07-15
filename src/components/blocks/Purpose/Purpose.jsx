@@ -5,7 +5,7 @@ import MainPurpose from "./elements/MainPurpose/MainPurpose";
 
 export default function Purpose() {
   return (
-    <section className={classes.purpose}>
+    <section className={`${classes.purpose} container`}>
       <HeadPurpose />
 
       <MainPurpose />

@@ -1,17 +1,20 @@
 .mission {
   position: relative;
+  display: inline-block;
   font-size: 14px;
   font-weight: 800;
   line-height: 150%;
   letter-spacing: 0.5em;
-  padding-left: 135px;
 
   text-transform: uppercase;
 
   span {
     color: #8cdae5;
   }
+}
 
+.right {
+  padding-left: 135px;
   &::before {
     content: "";
     position: absolute;
@@ -20,5 +23,18 @@
     width: 98px;
     height: 1px;
     background-color: #3a3a3a;
+  }
+}
+.left {
+  color: #ffffff;
+  padding-right: 135px;
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 98px;
+    height: 1px;
+    background-color: #ffffff;
   }
 }

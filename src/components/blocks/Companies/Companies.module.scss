@@ -1,0 +1,18 @@
+.companies {
+  margin-top: 172px;
+
+  &__title {
+    margin: 127px 0 81px;
+  }
+
+  &__content {
+    display: flex;
+    gap: 0 56px;
+  }
+}
+
+.container {
+  max-width: 1556px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
