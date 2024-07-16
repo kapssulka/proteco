@@ -1,0 +1,17 @@
+.nav {
+  position: relative;
+
+  display: inline-block;
+  padding: 41px 60px 173px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: #3a3a3a;
+    opacity: 0.2;
+  }
+}

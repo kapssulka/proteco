@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./Glomaco.module.scss";
 import GlomacoIcon from "../../../../icons/GlomacoIcon";
+import TextBorderBottom from "../../../../elements/TextBorderBottom/TextBorderBottom";
 
 export default function Glomaco() {
   return (
@@ -15,9 +16,7 @@ export default function Glomaco() {
         контрактного производства
       </p>
 
-      <a className={classes.about} href="#">
-        подробнее о компании
-      </a>
+      <TextBorderBottom>подробнее о компании</TextBorderBottom>
     </div>
   );
 }

@@ -1,0 +1,25 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  padding-top: 45px;
+  max-width: 490px;
+  margin-left: 100px;
+  margin-right: 30px;
+
+  &__text {
+    font-size: 16px;
+    line-height: 150%;
+
+    margin: 52px 0 82px;
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import classes from "./Proteco.module.scss";
 import ProtecoIcon from "../../../../icons/ProtecoIcon";
+import TextBorderBottom from "../../../../elements/TextBorderBottom/TextBorderBottom";
 
 export default function Proteco() {
   return (
@@ -13,9 +14,7 @@ export default function Proteco() {
         контрактного производства
       </p>
 
-      <a className={classes.about} href="#">
-        подробнее о компании
-      </a>
+      <TextBorderBottom>подробнее о компании</TextBorderBottom>
     </div>
   );
 }

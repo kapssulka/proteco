@@ -1,0 +1,39 @@
+.content {
+  margin-top: 85px;
+  color: #fff;
+  max-width: 699px;
+
+  &__title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 130%;
+
+    margin-bottom: 56px;
+    max-width: 610px;
+  }
+
+  &__list {
+    &_item {
+      position: relative;
+      padding-left: 26px;
+
+      font-size: 16px;
+      line-height: 150%;
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 6px;
+        height: 6px;
+        background-color: #8cdae5;
+        border-radius: 50%;
+      }
+    }
+  }
+}
