@@ -1,22 +1,23 @@
-.mission {
-  position: relative;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 800;
-  line-height: 150%;
-  letter-spacing: 0.5em;
+.wrapper {
+  p {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 150%;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
 
-  text-transform: uppercase;
-
-  span {
-    color: #8cdae5;
+    span {
+      color: #8cdae5;
+    }
   }
 }
 
 .right {
   padding-left: 135px;
-  &::before {
-    content: "";
+
+  #line {
     position: absolute;
     left: 0;
     top: 50%;
@@ -25,11 +26,11 @@
     background-color: #3a3a3a;
   }
 }
+
 .left {
-  color: #ffffff;
   padding-right: 135px;
-  &::before {
-    content: "";
+
+  #line {
     position: absolute;
     right: 0;
     top: 50%;

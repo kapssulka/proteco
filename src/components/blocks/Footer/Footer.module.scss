@@ -1,0 +1,30 @@
+.footer {
+  position: relative;
+
+  margin-top: 190px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+
+    margin-bottom: 38px;
+  }
+  &__bottom {
+    div {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+
+    &_link {
+      color: #fff;
+      opacity: 0.5;
+      text-decoration: underline;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

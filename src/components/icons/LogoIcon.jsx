@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function LogoIcon() {
+export default function LogoIcon({ width = 206, height = 29 }) {
   return (
     <svg
-      width="206"
-      height="29"
+      width={width}
+      height={height}
       viewBox="0 0 206 29"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

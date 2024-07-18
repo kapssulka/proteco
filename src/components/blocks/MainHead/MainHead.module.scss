@@ -1,8 +1,5 @@
 .mainHead {
-  position: relative;
   padding-top: 223px;
-  // padding-top: 12%;
-  padding-left: 151px;
   &__subTitle {
     color: #8cdae5;
 
@@ -12,6 +9,11 @@
     letter-spacing: 0.5em;
 
     margin-bottom: 32px;
+  }
+
+  &__wrapper {
+    position: relative;
+    padding-left: 151px;
   }
   &__title {
     color: #fff;

@@ -1,0 +1,43 @@
+.nav {
+  display: grid;
+  grid-template-areas:
+    "Главная Бренды Контакты"
+    "about Новости Новости"
+    "Направления Карьера Карьера";
+
+  gap: 17px 51px;
+
+  &__item {
+    &:nth-child(1) {
+      grid-area: Главная;
+    }
+    &:nth-child(2) {
+      grid-area: about;
+    }
+    &:nth-child(3) {
+      grid-area: Направления;
+    }
+    &:nth-child(4) {
+      grid-area: Бренды;
+    }
+    &:nth-child(5) {
+      grid-area: Новости;
+    }
+    &:nth-child(6) {
+      grid-area: Карьера;
+    }
+    &:nth-child(7) {
+      grid-area: Контакты;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 150%;
+    color: #fff;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

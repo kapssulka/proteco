@@ -1,0 +1,26 @@
+.container {
+  position: relative;
+  padding: 0 150px;
+}
+
+.btn {
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
+  top: 186px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  border: 2px solid;
+  border-color: #8cdae5;
+
+  &__prev {
+    left: 0;
+  }
+  &__next {
+    right: 0;
+  }
+}

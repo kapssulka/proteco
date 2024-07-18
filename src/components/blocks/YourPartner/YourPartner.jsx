@@ -10,7 +10,7 @@ export default function YourPartner() {
       <ImageBack maxHeight={775} src="/src/assets/image/yourPartner.png" />
 
       <div className={classes.wrapper}>
-        <TitleRight className={classes.subTitle} left={true}>
+        <TitleRight color="#fff" className={classes.subTitle} left={true}>
           <span>ПАРТНЕРСТВО</span> С ГК ПРОТЕКО
         </TitleRight>
 

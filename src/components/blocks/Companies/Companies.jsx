@@ -11,7 +11,11 @@ export default function Companies() {
       <ImageBack maxHeight="586" src="/src/assets/image/CompaniesBack.png" />
 
       <div className={classes.container}>
-        <TitleRight className={classes.companies__title} left={true}>
+        <TitleRight
+          color="#fff"
+          className={classes.companies__title}
+          left={true}
+        >
           <span>Компании</span> ГК ПРОТЕКО
         </TitleRight>
 

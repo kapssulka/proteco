@@ -1,0 +1,20 @@
+import React from "react";
+
+export default function PrevArrow() {
+  return (
+    <svg
+      width="9"
+      height="14"
+      viewBox="0 0 9 14"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        opacity="0.5"
+        d="M8.08508 1.46808L2.3404 7.21276L8.08508 12.9574"
+        stroke="#8CDAE5"
+        strokeWidth="2"
+      />
+    </svg>
+  );
+}
