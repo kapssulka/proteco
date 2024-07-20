@@ -7,7 +7,6 @@ import MainHead from "./components/blocks/MainHead/MainHead";
 import News from "./components/blocks/News/News";
 import Purpose from "./components/blocks/Purpose/Purpose";
 import YourPartner from "./components/blocks/YourPartner/YourPartner";
-import ImageBack from "./components/elements/ImageBack/ImageBack";
 
 function App() {
   return (

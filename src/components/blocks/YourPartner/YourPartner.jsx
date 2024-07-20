@@ -3,6 +3,7 @@ import classes from "./YourPartner.module.scss";
 import ImageBack from "../../elements/ImageBack/ImageBack";
 import TitleRight from "../../elements/TitleRight/TitleRight";
 import ContentText from "./elements/ContentText/ContentText";
+import Form from "../../elements/Form/Form";
 
 export default function YourPartner() {
   return (
@@ -16,6 +17,8 @@ export default function YourPartner() {
 
         <div className={classes.content}>
           <ContentText />
+
+          <Form />
         </div>
       </div>
     </section>

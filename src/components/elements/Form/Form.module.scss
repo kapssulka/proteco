@@ -1,0 +1,122 @@
+.form {
+  color: #fff;
+
+  max-width: 583px;
+
+  &__wrapperInputs {
+    display: grid;
+    grid-template-areas:
+      "name name"
+      "number email"
+      "offer offer ";
+
+    gap: 45px 23px;
+    grid-template-columns: 1fr 1fr;
+
+    input {
+      border: none;
+      background-color: transparent;
+
+      font-size: 16px;
+      line-height: 150%;
+      color: #fff;
+
+      border-bottom: 1px solid #fff;
+
+      opacity: 0.5;
+      padding: 15px 2px;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        color: #fff;
+        opacity: 0.5;
+      }
+      &:nth-child(1) {
+        grid-area: name;
+      }
+      &:nth-child(2) {
+        grid-area: number;
+      }
+      &:nth-child(3) {
+        grid-area: email;
+      }
+      &:nth-child(4) {
+        grid-area: offer;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 54px;
+
+    &_submit {
+      cursor: pointer;
+
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      height: 32px;
+      margin-right: 44px;
+    }
+
+    &_privacyPolicy {
+      display: flex;
+      align-items: start;
+      opacity: 0.5;
+
+      max-width: 435px;
+      width: 100%;
+
+      p {
+        font-size: 12px;
+        line-height: 150%;
+        text-indent: 23px;
+      }
+
+      .customCheckbox {
+        cursor: pointer;
+        position: relative;
+        margin-top: 2px;
+
+        input {
+          position: absolute;
+          opacity: 0;
+          width: 0;
+          height: 0;
+
+          & + .checkmark {
+            img {
+              display: none;
+              position: absolute;
+            }
+          }
+          &:checked + .checkmark {
+            img {
+              display: block;
+
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+        }
+
+        .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 13px;
+          width: 13px;
+          background-color: transparent; // Цвет фона
+          border: 1px solid #fff;
+        }
+      }
+    }
+  }
+}
