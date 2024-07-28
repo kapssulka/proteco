@@ -1,19 +1,31 @@
-import React from "react";
+import React, { createContext, useState } from "react";
 import classes from "./HeaderRight.module.scss";
 import Menu from "../Menu/Menu";
-import cn from "classnames";
+
+import ConnectWithUs from "./elements/СonnectWithUs/СonnectWithUs";
+import Language from "./elements/Language/Language";
+import ModalWindow from "../ModalWindow/ModalWindow";
+
+export const modalContext = createContext(null);
 
 export default function HeaderRight() {
+  const [activeModal, setActiveModal] = useState(false);
+
   return (
-    <div className={classes.wrapper}>
-      <a className={classes.btn}>Связаться с нами</a>
+    <>
+      <modalContext.Provider
+        value={{ activeModal: activeModal, setActiveModal: setActiveModal }}
+      >
+        <div className={classes.wrapper}>
+          <ConnectWithUs />
 
-      <div className={classes.language}>
-        <a className={cn(classes.language__en, classes.active)}>RU</a>
-        <a className={classes.language__en}>EN</a>
-      </div>
+          <Language />
 
-      <Menu />
-    </div>
+          <Menu />
+        </div>
+
+        <ModalWindow />
+      </modalContext.Provider>
+    </>
   );
 }

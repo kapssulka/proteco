@@ -2,39 +2,6 @@
   display: flex;
 }
 
-.btn {
-  position: relative;
-
-  font-size: 14px;
-  line-height: 150%;
-
-  color: #8cdae5;
-  text-transform: uppercase;
-
-  margin-right: 75px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    height: 1px;
-    width: 100%;
-    background-color: #8cdae5;
-  }
-}
-.language {
-  display: flex;
-  gap: 0 20px;
-  color: #ffffff;
-  margin-right: 60px;
-
-  &__ru {
-  }
-  &__en {
-  }
-}
-
 .active {
   position: relative;
   opacity: 0.5;
@@ -50,4 +17,8 @@
     background-color: #fff;
     opacity: 0.5;
   }
+}
+
+.modalForm {
+  margin-top: 76px;
 }

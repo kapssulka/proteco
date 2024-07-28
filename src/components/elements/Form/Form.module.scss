@@ -1,5 +1,5 @@
 .form {
-  color: #fff;
+  // color: #fff;
 
   max-width: 583px;
 
@@ -19,9 +19,9 @@
 
       font-size: 16px;
       line-height: 150%;
-      color: #fff;
+      color: inherit;
 
-      border-bottom: 1px solid #fff;
+      border-bottom: 1px solid;
 
       opacity: 0.5;
       padding: 15px 2px;
@@ -31,7 +31,8 @@
       }
 
       &::placeholder {
-        color: #fff;
+        color: inherit;
+
         opacity: 0.5;
       }
       &:nth-child(1) {
@@ -91,13 +92,13 @@
           height: 0;
 
           & + .checkmark {
-            img {
+            svg {
               display: none;
               position: absolute;
             }
           }
           &:checked + .checkmark {
-            img {
+            svg {
               display: block;
 
               left: 50%;
@@ -114,7 +115,7 @@
           height: 13px;
           width: 13px;
           background-color: transparent; // Цвет фона
-          border: 1px solid #fff;
+          border: 1px solid;
         }
       }
     }

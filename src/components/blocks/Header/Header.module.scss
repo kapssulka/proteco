@@ -17,8 +17,19 @@
   z-index: 10;
   top: 0;
   right: 0;
-  width: 647px;
+  width: 0;
   height: 100vh;
 
   background-color: #fff;
+
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+  visibility: hidden;
+  opacity: 0;
+}
+
+.activeMenu {
+  visibility: visible;
+  opacity: 1;
+  width: 647px;
 }

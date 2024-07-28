@@ -1,6 +1,7 @@
 import "./App.scss";
 import Brends from "./components/blocks/Brends/Brends";
 import Companies from "./components/blocks/Companies/Companies";
+import Contacts from "./components/blocks/Contacts/Contacts";
 import Footer from "./components/blocks/Footer/Footer";
 import Header from "./components/blocks/Header/Header";
 import MainHead from "./components/blocks/MainHead/MainHead";
@@ -25,6 +26,8 @@ function App() {
         <YourPartner />
 
         <News />
+
+        <Contacts />
       </main>
 
       <Footer />

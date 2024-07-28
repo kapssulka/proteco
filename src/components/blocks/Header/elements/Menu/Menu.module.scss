@@ -7,6 +7,24 @@
     width: 36px;
     height: 22px;
 
+    &.open {
+      span {
+        opacity: 0;
+      }
+
+      &::before {
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+        background-color: black;
+      }
+
+      &::after {
+        bottom: 50%;
+        transform: translateY(50%) rotate(-45deg);
+        background-color: black;
+      }
+    }
+
     span {
       position: absolute;
       right: 0;
@@ -14,8 +32,8 @@
       transform: translateY(-50%);
       width: 28px;
       height: 2px;
-      // background-color: #fff;
-      background-color: red;
+      background-color: #fff;
+      transition: all 0.3s;
     }
 
     &::before {
@@ -25,8 +43,8 @@
       top: 0;
       height: 2px;
       width: 100%;
-      // background-color: #fff;
-      background-color: red;
+      background-color: #fff;
+      transition: all 0.3s;
     }
     &::after {
       content: "";
@@ -35,19 +53,8 @@
       bottom: 0;
       height: 2px;
       width: 100%;
-      // background-color: #fff;
-      background-color: red;
+      background-color: #fff;
+      transition: all 0.3s;
     }
-  }
-
-  &__wrapper {
-    position: absolute;
-    z-index: 10;
-    right: 0;
-    top: 0;
-    width: 647px;
-    height: 100vh;
-
-    // background-color: #fff;
   }
 }
