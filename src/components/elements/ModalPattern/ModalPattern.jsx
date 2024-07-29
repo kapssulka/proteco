@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { createPortal } from "react-dom";
 
-import classes from "./Modal.module.scss";
+import classes from "./ModalPattern.module.scss";
 import cn from "classnames";
-import { modalContext } from "../../blocks/Header/elements/HeaderRight/HeaderRight";
+import { modalContext } from "../../../App";
 
 const modal = document.querySelector("#modal");
 

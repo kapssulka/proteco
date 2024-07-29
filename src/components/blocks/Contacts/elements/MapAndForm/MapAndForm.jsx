@@ -1,11 +1,12 @@
 import React from "react";
 import classes from "./MapAndForm.module.scss";
 import Form from "../../../../elements/Form/Form";
+import MapComponent from "../MapComponents/MapComponents";
 
 export default function MapAndForm() {
   return (
     <div className={classes.content}>
-      <div className="map">adasda</div>
+      <MapComponent />
       <Form color="#3A3A3A" />
     </div>
   );

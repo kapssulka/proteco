@@ -1,3 +1,4 @@
+import { createContext, useState } from "react";
 import "./App.scss";
 import Brends from "./components/blocks/Brends/Brends";
 import Companies from "./components/blocks/Companies/Companies";
@@ -9,28 +10,36 @@ import News from "./components/blocks/News/News";
 import Purpose from "./components/blocks/Purpose/Purpose";
 import YourPartner from "./components/blocks/YourPartner/YourPartner";
 
+export const modalContext = createContext(null);
+
 function App() {
+  const [activeModal, setActiveModal] = useState(false);
+
   return (
     <>
-      <Header />
+      <modalContext.Provider
+        value={{ activeModal: activeModal, setActiveModal: setActiveModal }}
+      >
+        <Header />
 
-      <main>
-        <MainHead />
+        <main>
+          <MainHead />
 
-        <Purpose />
+          <Purpose />
 
-        <Companies />
+          <Companies />
 
-        <Brends />
+          <Brends />
 
-        <YourPartner />
+          <YourPartner />
 
-        <News />
+          <News />
 
-        <Contacts />
-      </main>
+          <Contacts />
+        </main>
 
-      <Footer />
+        <Footer />
+      </modalContext.Provider>
     </>
   );
 }

@@ -19,10 +19,19 @@
     visibility: visible;
   }
 
+  &.active &__element {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
   &__element {
     position: relative;
     padding: 150px 130px;
     background-color: #fff;
+
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateY(10%);
 
     .close {
       cursor: pointer;

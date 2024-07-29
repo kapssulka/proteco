@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import classes from "./Form.module.scss";
 import TextBorderBottom from "../TextBorderBottom/TextBorderBottom";
 import FormCheckbox from "../../icons/FormCheckbox";
 import cn from "classnames";
+import { modalContext } from "../../../App";
 
 export default function Form({ color = "#fff", className }) {
+  const { setActiveModal } = useContext(modalContext);
+
   return (
     <form
+      onSubmit={(e) => e.preventDefault()}
       style={{ color: color }}
       className={cn(classes.form, className)}
       action=""
@@ -39,7 +43,11 @@ export default function Form({ color = "#fff", className }) {
       </fieldset>
 
       <fieldset className={classes.form__bottom}>
-        <button className={classes.form__bottom_submit} type="submit">
+        <button
+          onClick={() => setActiveModal("tanks")}
+          className={classes.form__bottom_submit}
+          type="submit"
+        >
           <TextBorderBottom color="#8CDAE5">Отправить</TextBorderBottom>
         </button>
 
