@@ -5,9 +5,13 @@ import { burgerContext } from "../../Header";
 
 export default function Menu() {
   const { activeNav, setActiveNav } = useContext(burgerContext);
+  const handleClick = (e) => {
+    e.stopPropagation();
+    setActiveNav(!activeNav);
+  };
 
   return (
-    <div onClick={() => setActiveNav(!activeNav)} className={classes.menu}>
+    <div onClick={handleClick} className={classes.menu}>
       <div
         className={cn(classes.menu__burger, {
           [classes.open]: activeNav,

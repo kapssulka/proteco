@@ -3,15 +3,15 @@ import classes from "./Header.module.scss";
 import LogoIcon from "/src/components/icons/LogoIcon";
 import HeaderRight from "./elements/HeaderRight/HeaderRight";
 import NavMenu from "./elements/NavMenu/NavMenu";
-import cn from "classnames";
 
 export const burgerContext = createContext(null);
 
-export default function Header() {
+export default function Header({ backgroundColor = "transparent" }) {
   const [activeNav, setActiveNav] = useState(false);
 
   const value = { setActiveNav: setActiveNav, activeNav: activeNav };
 
+  //  ОТСКОК ПРИ ОТКРЫТИИ МЕНЮ
   useEffect(() => {
     const body = document.querySelector("body");
     const scrollBarWidth =
@@ -26,19 +26,17 @@ export default function Header() {
     }
   }, [activeNav]);
 
-  const className = cn(classes.navMenu, {
-    [classes.activeMenu]: activeNav,
-  });
-
   return (
     <burgerContext.Provider value={value}>
-      <header className={classes.header}>
+      <header
+        style={{ background: backgroundColor }}
+        className={classes.header}
+      >
         <LogoIcon />
         <HeaderRight />
 
-        <div className={className}>
-          <NavMenu />
-        </div>
+        {/* absolute */}
+        <NavMenu />
       </header>
     </burgerContext.Provider>
   );

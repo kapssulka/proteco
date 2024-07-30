@@ -1,0 +1,14 @@
+.nav {
+  text-align: right;
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 29px;
+    }
+  }
+  &__link {
+    position: relative;
+    font-size: 16px;
+    line-height: 150%;
+    padding-right: 25px;
+  }
+}

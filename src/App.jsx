@@ -1,14 +1,13 @@
 import { createContext, useState } from "react";
 import "./App.scss";
-import Brends from "./components/blocks/Brends/Brends";
-import Companies from "./components/blocks/Companies/Companies";
-import Contacts from "./components/blocks/Contacts/Contacts";
+
 import Footer from "./components/blocks/Footer/Footer";
 import Header from "./components/blocks/Header/Header";
-import MainHead from "./components/blocks/MainHead/MainHead";
-import News from "./components/blocks/News/News";
-import Purpose from "./components/blocks/Purpose/Purpose";
-import YourPartner from "./components/blocks/YourPartner/YourPartner";
+
+import { Route, Routes } from "react-router-dom";
+import MainPage from "./components/pages/MainPage";
+import Blog from "./components/pages/Blog/Blog";
+import Layout from "./components/Layout";
 
 export const modalContext = createContext(null);
 
@@ -20,25 +19,13 @@ function App() {
       <modalContext.Provider
         value={{ activeModal: activeModal, setActiveModal: setActiveModal }}
       >
-        <Header />
-
-        <main>
-          <MainHead />
-
-          <Purpose />
-
-          <Companies />
-
-          <Brends />
-
-          <YourPartner />
-
-          <News />
-
-          <Contacts />
-        </main>
-
-        <Footer />
+        <Layout>
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+            <Route path="/blog/*" element={<Blog />} />
+          </Routes>
+          <Footer />
+        </Layout>
       </modalContext.Provider>
     </>
   );

@@ -1,0 +1,38 @@
+.breadCrumbs {
+  display: flex;
+  align-items: center;
+
+  margin: 48px 0 20px;
+
+  &__item {
+    position: relative;
+    font-size: 16px;
+    line-height: 150%;
+    color: #828282;
+
+    &:not(:last-child) {
+      padding-right: 15px;
+
+      margin-right: 10px;
+
+      &::before {
+        content: ">";
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        color: #828282;
+        font-size: 16px;
+        line-height: 150%;
+      }
+    }
+
+    &_link {
+      color: inherit;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

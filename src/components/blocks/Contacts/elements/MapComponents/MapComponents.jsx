@@ -22,7 +22,7 @@ const MapComponent = () => {
       className={classes.map}
       center={position}
       zoom={15}
-      style={{ height: "100%", width: "519px" }}
+      style={{ height: "100%", width: "519px", zIndex: 50 }}
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

@@ -1,0 +1,29 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  margin-top: 82px;
+
+  color: #3a3a3a;
+  opacity: 0.5;
+
+  &__tel {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+
+    margin-bottom: 3px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__email {
+    font-size: 16px;
+    line-height: 150%;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,11 +1,9 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { useContext } from "react";
 import classes from "./HeaderRight.module.scss";
 import Menu from "../Menu/Menu";
 
 import ConnectWithUs from "./elements/СonnectWithUs/СonnectWithUs";
 import Language from "./elements/Language/Language";
-
-import ModalContent from "./elements/ModalContent/ModalContent";
 
 import TitleRight from "../../../../elements/TitleRight/TitleRight";
 import Form from "../../../../elements/Form/Form";
@@ -43,7 +41,9 @@ export default function HeaderRight() {
               <span>Спасибо</span> за обращение!
             </TitleRight>
 
-            <p>Ожидайте звонка, скоро с Вами свяжется наш менеджер</p>
+            <p className={classes.modalThanksText}>
+              Ожидайте звонка, скоро с Вами свяжется наш менеджер
+            </p>
           </div>
         )}
       </ModalPattern>
