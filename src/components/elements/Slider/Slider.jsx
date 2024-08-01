@@ -5,10 +5,10 @@ import PrevArrow from "/src/components/icons/PrevArrow";
 import NextArrow from "/src/components/icons/NextArrow";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import Slide from "./elements/Slide/Slide";
 
 import "swiper/scss";
 import cn from "classnames";
+import NewsItem from "../NewsItem/NewsItem";
 
 export default function Slider() {
   const swiperRef = useRef(null);
@@ -34,16 +34,16 @@ export default function Slider() {
         onSlideChange={handleSlideChange}
       >
         <SwiperSlide>
-          <Slide />
+          <NewsItem />
         </SwiperSlide>
         <SwiperSlide>
-          <Slide />
+          <NewsItem />
         </SwiperSlide>
         <SwiperSlide>
-          <Slide />
+          <NewsItem />
         </SwiperSlide>
         <SwiperSlide>
-          <Slide />
+          <NewsItem />
         </SwiperSlide>
       </Swiper>
 

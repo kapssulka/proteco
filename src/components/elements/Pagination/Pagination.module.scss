@@ -1,0 +1,53 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+  &__list {
+    display: flex;
+    align-items: center;
+
+    &_item {
+      cursor: pointer;
+
+      font-size: 18px;
+      line-height: 120%;
+
+      margin: 12px;
+      transition: all 0.2s;
+      color: black;
+
+      &:hover {
+        color: rgb(138, 138, 138);
+      }
+    }
+
+    .activeItem {
+      cursor: pointer;
+
+      font-size: 18px;
+      line-height: 120%;
+
+      margin: 12px;
+      color: #8cdae5;
+    }
+  }
+
+  &__btn {
+    cursor: pointer;
+    border: none;
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+
+    padding: 12px;
+
+    transition: all 0.2s;
+
+    border-radius: 50%;
+
+    &:hover {
+      background-color: #8cdae5;
+    }
+  }
+}

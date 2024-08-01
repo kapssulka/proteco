@@ -1,7 +1,7 @@
 import React from "react";
+import classes from "./Blog.module.scss";
 import Header from "../../blocks/Header/Header";
 import BreadCrumbs from "../../elements/BreadCrumbs/BreadCrumbs";
-import classes from "./Blog.module.scss";
 import { Route, Routes, NavLink } from "react-router-dom";
 import News from "./blocks/News/News";
 import Video from "./blocks/Video/Video";

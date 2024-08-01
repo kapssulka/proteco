@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function NextArrow() {
+export default function NextArrow({ color = "#8CDAE5" }) {
   return (
     <svg
       width="9"
@@ -12,7 +12,7 @@ export default function NextArrow() {
       <path
         opacity="0.5"
         d="M0.914917 1.46802L6.6596 7.2127L0.914917 12.9574"
-        stroke="#8CDAE5"
+        stroke={color}
         strokeWidth="2"
       />
     </svg>

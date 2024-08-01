@@ -5,7 +5,7 @@ export default function BreadCrumbs() {
   return (
     <ul className={classes.breadCrumbs}>
       <li className={classes.breadCrumbs__item}>
-        <Link className={classes.breadCrumbs__item_link} to="/home">
+        <Link className={classes.breadCrumbs__item_link} to="/">
           Главная
         </Link>
       </li>

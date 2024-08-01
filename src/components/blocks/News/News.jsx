@@ -1,7 +1,6 @@
 import React from "react";
 import classes from "./News.module.scss";
 import TitleRight from "../../elements/TitleRight/TitleRight";
-
 import Slider from "../../elements/Slider/Slider";
 
 export default function News() {

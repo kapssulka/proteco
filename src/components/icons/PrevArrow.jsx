@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function PrevArrow() {
+export default function PrevArrow({ color = "#8CDAE5" }) {
   return (
     <svg
       width="9"
@@ -12,7 +12,7 @@ export default function PrevArrow() {
       <path
         opacity="0.5"
         d="M8.08508 1.46808L2.3404 7.21276L8.08508 12.9574"
-        stroke="#8CDAE5"
+        stroke={color}
         strokeWidth="2"
       />
     </svg>
