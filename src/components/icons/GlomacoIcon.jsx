@@ -13,7 +13,7 @@ export default function GlomacoIcon({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clipPath="url(#clip0_108_1192)">
+      <g clip-path="url(#clip0_108_1192)">
         <path
           opacity="0.9"
           d="M13.8817 42.0372C39.2449 61.2801 68.8246 62.7007 96.4582 69.4164C81.4089 73.2908 13.3627 82.2019 13.8817 42.0372Z"
@@ -70,7 +70,7 @@ export default function GlomacoIcon({
         />
       </g>
       <defs>
-        <clipPath id="clip0_108_1192">
+        <clipPath>
           <rect width="250" height="109" fill={color} />
         </clipPath>
       </defs>

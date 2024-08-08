@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./MainHead.module.scss";
 
 import ImageBack from "../../elements/ImageBack/ImageBack";
@@ -6,8 +5,11 @@ import ImageBack from "../../elements/ImageBack/ImageBack";
 export default function MainHead() {
   return (
     <section className={`${classes.mainHead}`}>
-      <ImageBack maxHeight={916} src={"/src/assets/image/mainBack.png"} />
-
+      <ImageBack
+        full={true}
+        maxHeight={916}
+        src={"/src/assets/image/mainBack.png"}
+      />
       <div className={`${classes.mainHead__wrapper} container`}>
         <h3 className={classes.mainHead__subTitle}>ГК ПРОТЕКО</h3>
         <h1 className={classes.mainHead__title}>

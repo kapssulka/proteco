@@ -3,10 +3,10 @@ import classes from "./NavMenu.module.scss";
 
 import cn from "classnames";
 
-import { burgerContext } from "../../Header";
 import CompaniesContacts from "./elements/CompaniesContacts/CompaniesContacts";
 import CompaniesLogo from "./elements/CompaniesLogo/CompaniesLogo";
 import NavList from "./elements/NavList/NavList";
+import { burgerContext } from "../../Header";
 
 export default function NavMenu() {
   const { activeNav, setActiveNav } = useContext(burgerContext);

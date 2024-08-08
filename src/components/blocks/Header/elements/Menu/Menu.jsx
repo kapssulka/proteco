@@ -9,7 +9,6 @@ export default function Menu() {
     e.stopPropagation();
     setActiveNav(!activeNav);
   };
-
   return (
     <div onClick={handleClick} className={classes.menu}>
       <div

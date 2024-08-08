@@ -15,7 +15,6 @@ export default function Glomaco() {
         контроль качества продукции как собственных брендов, так и в качестве
         контрактного производства
       </p>
-
       <TextBorderBottom>подробнее о компании</TextBorderBottom>
     </div>
   );

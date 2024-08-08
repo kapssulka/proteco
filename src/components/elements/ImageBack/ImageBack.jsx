@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./ImageBack.module.scss";
 
 export default function ImageBack({ src = "", maxHeight = null }) {

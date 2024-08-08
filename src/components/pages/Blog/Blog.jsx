@@ -2,9 +2,7 @@ import React from "react";
 import classes from "./Blog.module.scss";
 import Header from "../../blocks/Header/Header";
 import BreadCrumbs from "../../elements/BreadCrumbs/BreadCrumbs";
-import { Route, Routes, NavLink } from "react-router-dom";
-import News from "./blocks/News/News";
-import Video from "./blocks/Video/Video";
+import { NavLink, Outlet } from "react-router-dom";
 
 export default function Blog() {
   return (
@@ -30,10 +28,7 @@ export default function Blog() {
           </NavLink>
         </div>
 
-        <Routes>
-          <Route path="news" element={<News />} />
-          <Route path="video" element={<Video />} />
-        </Routes>
+        <Outlet />
       </main>
       ;
     </>
